@@ -1,5 +1,9 @@
 version: "3"
 
+networks:
+  imagineapi_imagineapi_net:
+    external: true
+
 services:
   caddy:
     image: caddy:2-alpine
@@ -8,3 +12,5 @@ services:
     ports:
       - 80:80
       - 443:443
+    networks:
+      - imagineapi_imagineapi_net
