@@ -1,0 +1,7 @@
+{
+  email youremail@example.com
+}
+
+subdomain.example.com {
+  reverse_proxy localhost:8055
+}
